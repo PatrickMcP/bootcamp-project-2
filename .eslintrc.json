@@ -1,5 +1,6 @@
 {
     "env": {
+        "es6": true,
         "browser": true,
         "commonjs": true,
         "node": true
@@ -24,11 +25,12 @@
         "camelcase": "error",
         "indent": [
             "error",
-            2
+            2,
+            {"SwitchCase": 1}
         ],
         "linebreak-style": [
             "error",
-            "unix"
+            "windows"
         ],
         "quotes": [
             "error",
