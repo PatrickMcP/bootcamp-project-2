@@ -21,5 +21,9 @@ module.exports = function(sequelize, DataTypes) {
     hole17Par: DataTypes.INTEGER,
     hole18Par: DataTypes.INTEGER
   });
+
+  Course.associate = function(models) {
+    Course.hasMany(models.Round, {});
+  };
   return Course;
 };

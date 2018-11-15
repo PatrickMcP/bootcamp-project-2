@@ -1,7 +1,5 @@
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   var Round = sequelize.define("Round", {
-    userID: DataTypes.INTEGER,
-    courseID: DataTypes.INTEGER,
     hole1Score: DataTypes.INTEGER,
     hole2Score: DataTypes.INTEGER,
     hole3Score: DataTypes.INTEGER,
