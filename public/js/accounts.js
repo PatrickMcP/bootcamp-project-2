@@ -24,7 +24,7 @@ $("#add-account").on("click", function(event) {
       .val()
       .trim()
   };
-
+  console.log(newAccount);
   if (
     newAccount.account_key.length > 0 &&
     newAccount.email.length > 0 &&
