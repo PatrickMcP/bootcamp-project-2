@@ -13,14 +13,15 @@
 <body>
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo"><img src = "https://images-na.ssl-images-amazon.com/images/I/71prch58mLL._SL1500_.jpg"></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <a href="#" class="brand-logo"><img id = "golfBall" src = "https://www.yourwdwstore.net/assets/images/4/40000/4000/000/44077b.jpg" class = "circle" alt="Image"width="auto"height="64"></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="./intro.html">Home</a></li>
         <li><a href="./courses.html">Courses</a></li>
         <li><a href="#">And Stuff</a></li>
       </ul>
   </div>
 </nav>
+<a class="weatherwidget-io" href="https://forecast7.com/en/40d56n111d84/sandy/?unit=us" data-label_1="Current" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="dark" >Current WEATHER</a>
 <h2>The View</h2>
 <hr>
 <h3>Fly Over</h3>
@@ -135,8 +136,10 @@
 </div>
 
 <h3>Preview</h3>
-<a class="waves-effect waves-light btn pink darken-1 modal-trigger" href="#demo-modal">View All Holes</a>
-
+<div id = "buttonContainer">
+      <a class="waves-effect waves-light btn pink darken-1 modal-trigger" href="#demo-modal">View All Holes</a>
+      <a class="waves-effect waves-light btn pink darken-1" href="../../scorecard.html">Play Course</a> 
+</div>
   <div id="demo-modal" class="modal">
     <div class="modal-content">
       <h4>A Demo of Simple Modal</h4>
@@ -228,10 +231,22 @@
         </div>
     </div>
 </div>
+<footer class="page-footer">
+            <div class="footer-copyright">
+              <div class="container">
+              © 2018 Copyright Mean Dean Productions
+              <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+              </div>
+            </div>
+          </footer>
 <script>
 $(document).ready(function(){
     $('.modal').modal();
   })
+
+  //Weather Widgit Script
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+
 </script>
 </body>
 </html>

@@ -7,16 +7,21 @@
     color: beige;
 }
 
+#golfBall {
+    width: 105px;
+    height: 93px;
+    position: absolute;
+    bottom: -78px;
+}
+
 img {
     width: 105px;
     height: 65px;
-    
 }
 
-.container {
+.Container {
     height: 200px;
     width: 200px;
-    background: url(https://www.maderasgolf.com/wp-content/uploads/2017/06/Maderas_slide.jpg);
 }
 
 #top {
@@ -28,12 +33,14 @@ img {
 
 nav .nav-wrapper {
     background: black!important;
+    height: 93px;
 }
 
 #welcomePage {
     position: absolute;
-    margin-left: 440px;
+    margin-left: 505px;
     color: wheat;
+    margin-top: 105px;
 }
 
 body {
@@ -76,8 +83,13 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    font-family: 'Permanent Marker', cursive; 
+    font-size: 60px;
+}
 th {
-    background: purple;
+    background: black;
+    color: white;
 }
 
 .red {
@@ -94,7 +106,7 @@ th {
 }
 
 table {
-    background: green;
+    background: blue;
 }
 
 .preview {
@@ -123,8 +135,8 @@ table {
 }           
 
 .pink.darken-1 {
-    margin-left: 688px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    background: red!important;
 }
 
 .holeNumber {
@@ -136,9 +148,74 @@ table {
     bottom: 67px;
 }
 
-iframe {
-     width: 100%;
-    -webkit-transform: scaleX(3); 
-    -moz-transform: scaleX(3);
-    height: 285px;
+#introImage {
+    width: 100%;
+    height: 225px;
 }
+
+
+.weatherwidget-io {
+    width: 75%;
+    margin-left: 154px;
+    display: block;
+    position: relative;
+    height: 111px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -299rem;
+    bottom: 69px;
+    height: 71px;
+    margin-right: 128px;
+    right: 14px;
+}
+
+nav a {
+    margin-top: 15px;
+}
+
+.page-footer {
+    background: black;
+}
+
+hr {
+    padding: 1px;
+    background: red;
+}
+
+.static {
+    width: 80%;
+    height: 250px;
+    margin-left: 155px;
+  }
+  
+.static:hover {
+    opacity:0;
+    width: 80%;
+    height: 250px;
+    margin-left: 155px;
+  }
+
+.active {
+    width: 80%;
+    height: 250px;
+    position: absolute;
+    z-index: -1;
+    right: 149px;
+  }
+
+  #buttonContainer{
+      margin-left: 615px;
+  }
+
+  #bodyContainer {
+    width: 1450px;
+    margin-bottom: 36px;
+    margin-left: 35px;
+    margin-top: 35px;
+    background: lightgray;
+  }
+
+  .introParagraph {
+      margin-left: 30px
+  }
