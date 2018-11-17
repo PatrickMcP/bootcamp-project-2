@@ -1,0 +1,47 @@
+{{> Navigation/nav-block search=false post=false account=false signup=true}}
+
+<div class="container" >
+  <header class="create-acct-wrap header-wrap" align="center">
+  <h1>Create Your Account</h1>
+  <h3 id="create-err-msg"></h3>
+ </header>
+
+
+<h3 id="err-msg"></h3>
+
+<form id= "create-form">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputFirst">First Name</label>
+      <input type="text" class="form-control" id="inputFirst" placeholder="John">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputLast">Last Name</label>
+      <input type="text" class="form-control" id="inputLast" placeholder="Doe">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+ 
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputPassword">Password</label>
+      <input type="password" class="form-control" id="inputPassword" placeholder="password">
+    </div>
+  </div>
+
+    
+    <div>
+    <h2 id="message"></h2>
+  </div>
+
+  <button type="submit" id="add-account" class="btn btn-primary">Submit</button>
+  
+
+
+</form>
