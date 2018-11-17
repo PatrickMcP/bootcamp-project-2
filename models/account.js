@@ -52,5 +52,10 @@ module.exports = function(sequelize, DataTypes) {
     return bcrypt.compareSync(password, this.account_key);
   };
 
+  // Creating an association with the rounds table.
+  Accounts.associate = function(models) {
+    Accounts.hasMany(models.Round, {});
+  };
+
   return Accounts;
 };
