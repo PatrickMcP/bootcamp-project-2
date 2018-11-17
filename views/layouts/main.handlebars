@@ -3,13 +3,43 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
   <title>Home Page</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
   {{{body}}}
 </body>
+<script>
+  $.fn.extend({
+    animateCss: function (animationName, callback) {
+      var animationEnd = (function (el) {
+        var animations = {
+          animation: 'animationend',
+          OAnimation: 'oAnimationEnd',
+          MozAnimation: 'mozAnimationEnd',
+          WebkitAnimation: 'webkitAnimationEnd',
+        };
+        for (var t in animations) {
+          if (el.style[t] !== undefined) {
+            return animations[t];
+          }
+        }
+      })(document.createElement('div'));
+      this.addClass('animated ' + animationName).one(animationEnd, function () {
+        $(this).removeClass('animated ' + animationName);
+        if (typeof callback === 'function') callback();
+      });
+      return this;
+    },
+  });
+</script>
+
+<script src="/public/js/home.js"></script>
+<script src="/public/js/accounts.js"></script>
 
 </html>
