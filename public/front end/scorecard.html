@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scorecard</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./scorecard.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src = "https://images-na.ssl-images-amazon.com/images/I/71prch58mLL._SL1500_.jpg" alt="Image"width="auto"height="64"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="./intro.html">Home</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="#">And Stuff</a></li>
+                </ul>
+        </div>
+    </nav>
+<br>
+<div class="container col s12">
+    <div>
+    <br>
+        <h4>Scorecard</h4>
+        <h5>The View</h5>
+    <br>
+    <div data-role="main" class="input-field col s6">
+      <div data-role="collapsible" data-collapsed="true">
+          <button id="btn1" class="waves-effect waves-light btn pink darken-1">Add Scores</button>
+  
+  <div data-role="fieldcontain">
+      <label for="CourseHole">Hole</label>
+      <input type="text" name="courseHole" id="courseHole" value=""  />
+  </div>  
+  <div data-role="fieldcontain">
+      <label for="holePar">Par</label>
+      <input type="text" name="holePar" id="holePar" value=""  />
+  </div>  
+  <div data-role="fieldcontain">
+      <label for="userHandicap">Handicap</label>
+      <input type="text" name="userHandicap" id="userHandicap" value=""  />
+  </div> 
+  
+  <div data-role="fieldcontain">
+      <label for="score">User Score</label>
+      <input type="text" name="score" id="score" value=""  />
+  </div>  
+  
+  
+      <table data-role="table" id="table-column-toggle" data-mode="columntoggle" border="1" class="ui-responsive table-stroke">
+        <thead>
+          <tr>
+            <th data-priority="2">Hole</th>
+            <th>Par</th>
+            <th data-priority="3">Handicap</th>
+            <th data-priority="1">User Score</th>
+           
+        </thead>
+  
+        <tbody>
+          
+        </tbody>
+      </table>
+  
+    </div>
+  </div>
+
+  <!-- jQuery link  -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Link to external javascript file  -->
+  <script type="text/javascript" src="./scorecard.js"></script>
+
+</body>
+</html>
