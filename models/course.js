@@ -1,5 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   var Course = sequelize.define("Course", {
+    courseName: DataTypes.STRING,
     slopeRating: DataTypes.FLOAT,
     courseRating: DataTypes.FLOAT,
     hole1Par: DataTypes.INTEGER,
