@@ -1,12 +1,3 @@
-.z-depth-5 {
-    text-align: center;
-    font-size: 40px;
-    position: relative;
-    margin-bottom: 0px;
-    bottom: 217px;
-    color: beige;
-}
-
 #golfBall {
     width: 105px;
     height: 93px;
@@ -14,12 +5,7 @@
     bottom: -78px;
 }
 
-img {
-    width: 105px;
-    height: 65px;
-}
-
-.Container {
+.containerWelcome {
     height: 200px;
     width: 200px;
 }
@@ -31,7 +17,7 @@ img {
     width: 100%;
 }
 
-nav .nav-wrapper {
+.topNav {
     background: black!important;
     height: 93px;
 }
@@ -43,7 +29,7 @@ nav .nav-wrapper {
     margin-top: 105px;
 }
 
-body {
+.backBody {
     background: lightcyan;
 }
 
@@ -55,11 +41,11 @@ margin-left: 510px;
     text-align: center;
 }
 
-.waves-effect {
+#introButton {
     background: black;
 }
 
-h2 {
+.textCenter {
     text-align: center
 }
 
@@ -79,24 +65,20 @@ h2 {
     margin-left: 30%;
 }
 
-h3 {
+.titleH3 {
     text-align: center;
 }
 
-h4 {
-    font-family: 'Permanent Marker', cursive; 
-    font-size: 60px;
-}
-th {
+.tableTop {
     background: black;
     color: white;
 }
 
-.red {
+.tableRed {
     background: red;
 }
 
-.white {
+.tableWhite {
     background: white;
 }
 
@@ -105,10 +87,9 @@ th {
     margin-left: 235px;
 }
 
-table {
+#scoreTable {
     background: blue;
 }
-
 .preview {
     width: 300px;
     height: 200px;
@@ -119,16 +100,11 @@ table {
     right: 225px;
 }
 
-.red.darken-1 {
-    margin-left: 695px;
-    margin-bottom: 10px;
-}
-
 .otherModal {
     width: 300px;
     height: 250px;
 }
- .modal-content {
+.modal-content {
     width: 1498px;
     position: relative;
     right: 534px;
@@ -151,6 +127,7 @@ table {
 #introImage {
     width: 100%;
     height: 225px;
+    margin-top: 14px
 }
 
 
@@ -178,7 +155,7 @@ nav a {
     background: black;
 }
 
-hr {
+.lineRed {
     padding: 1px;
     background: red;
 }
@@ -204,11 +181,11 @@ hr {
     right: 149px;
   }
 
-  #buttonContainer{
-      margin-left: 615px;
+#buttonContainer{
+    margin-left: 615px;
   }
 
-  #bodyContainer {
+#bodyContainer {
     width: 1450px;
     margin-bottom: 36px;
     margin-left: 35px;
@@ -216,6 +193,6 @@ hr {
     background: lightgray;
   }
 
-  .introParagraph {
-      margin-left: 30px
+.introParagraph {
+    margin-left: 30px
   }

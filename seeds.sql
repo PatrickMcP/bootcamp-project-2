@@ -1,7 +1,0 @@
-INSERT INTO users (user_id, first_name, last_name, email) VALUES ('billybob', "Billy", "Bob", "billybob@gmail.com");
-INSERT INTO course (course_id, course_name, par, yardage, course_rating, slope_rating, hole_1, hole_2, hole_3, hole_4, hole_5, hole_6, hole_7, hole_8, hole_9, hole_10, hole_11, hole_12, hole_13, hole_14, hole_15, hole_16, hole_17, hole_18) VALUES (1, "Bonneville", 72, 4775, 71.7, 125, 4, 4, 4, 3, 4, 5, 2, 5, 5, 4, 3, 5, 4, 3, 4, 5, 4, 4);
-INSERT INTO round (round_id, hole_1, hole_2, hole_3, hole_4, hole_5, hole_6, hole_7, hole_8, hole_9, hole_10, hole_11, hole_12, hole_13, hole_14, hole_15, hole_16, hole_17, hole_18) VALUES (1, 4, 6, 7, 3, 4, 5, 7, 9, 2, 4, 3, 5, 7, 3, 4, 5, 2, 3);
-
-INSERT INTO users (user_id, first_name, last_name, email) VALUES ('cleetus42', "Cleetus", "Jones", "cleetus42@aol.com");
-INSERT INTO course (course_id, course_name, par, yardage, course_rating, slope_rating, hole_1, hole_2, hole_3, hole_4, hole_5, hole_6, hole_7, hole_8, hole_9, hole_10, hole_11, hole_12, hole_13, hole_14, hole_15, hole_16, hole_17, hole_18) VALUES (1, "Bonneville", 72, 4775, 71.7, 125, 4, 4, 4, 3, 4, 5, 2, 5, 5, 4, 3, 5, 4, 3, 4, 5, 4, 4);
-INSERT INTO round (round_id, hole_1, hole_2, hole_3, hole_4, hole_5, hole_6, hole_7, hole_8, hole_9, hole_10, hole_11, hole_12, hole_13, hole_14, hole_15, hole_16, hole_17, hole_18) VALUES (1, 4, 6, 7, 3, 4, 5, 7, 9, 2, 4, 3, 5, 7, 3, 4, 5, 2, 3);

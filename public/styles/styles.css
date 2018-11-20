@@ -130,3 +130,203 @@ font-weight: 500;
 hr {
   background-color: #fff !important;
 }
+=======
+#golfBall {
+  width: 105px;
+  height: 93px;
+  position: absolute;
+  bottom: -78px;
+}
+
+.containerWelcome {
+  height: 200px;
+  width: 200px;
+}
+
+#top {
+  height: 200px;
+  width: 200px;
+  height: 231px;
+  width: 100%;
+}
+
+.topNav {
+  background: black!important;
+  height: 93px;
+}
+
+#welcomePage {
+  position: absolute;
+  margin-left: 505px;
+  color: wheat;
+  margin-top: 105px;
+}
+
+.backBody {
+  background: lightcyan;
+}
+
+.row {
+margin-left: 510px;
+}
+
+#enter {
+  text-align: center;
+}
+
+#introButton {
+  background: black;
+}
+
+.textCenter {
+  text-align: center
+}
+
+.theView {
+  width: 80%;
+  height: 250px;
+  margin-left: 155px;
+}
+
+#selectCourse {
+  text-align: center;
+}
+
+#overHead {
+  width: 600px;
+  height: 300px;
+  margin-left: 30%;
+}
+
+.titleH3 {
+  text-align: center;
+}
+
+.tableTop {
+  background: black;
+  color: white;
+}
+
+.tableRed {
+  background: red;
+}
+
+.tableWhite {
+  background: white;
+}
+
+#scoreCard {
+  width: 1060px;
+  margin-left: 235px;
+}
+
+#scoreTable {
+  background: blue;
+}
+.preview {
+  width: 300px;
+  height: 200px;
+}
+
+#thePreview {
+  position: relative;
+  right: 225px;
+}
+
+.otherModal {
+  width: 300px;
+  height: 250px;
+}
+.modal-content {
+  width: 1498px;
+  position: relative;
+  right: 534px;
+}           
+
+.pink.darken-1 {
+  margin-bottom: 10px;
+  background: red!important;
+}
+
+.holeNumber {
+  padding: 5px;
+  background: red;
+  text-align: center;
+  position: relative;
+  width: 300px;
+  bottom: 67px;
+}
+
+#introImage {
+  width: 100%;
+  height: 225px;
+  margin-top: 14px
+}
+
+
+.weatherwidget-io {
+  width: 75%;
+  margin-left: 154px;
+  display: block;
+  position: relative;
+  height: 111px;
+  padding: 0px;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -299rem;
+  bottom: 69px;
+  height: 71px;
+  margin-right: 128px;
+  right: 14px;
+}
+
+nav a {
+  margin-top: 15px;
+}
+
+.page-footer {
+  background: black;
+}
+
+.lineRed {
+  padding: 1px;
+  background: red;
+}
+
+.static {
+  width: 80%;
+  height: 250px;
+  margin-left: 155px;
+}
+
+.static:hover {
+  opacity:0;
+  width: 80%;
+  height: 250px;
+  margin-left: 155px;
+}
+
+.active {
+  width: 80%;
+  height: 250px;
+  position: absolute;
+  z-index: -1;
+  right: 149px;
+}
+
+#buttonContainer{
+  margin-left: 615px;
+}
+
+#bodyContainer {
+  width: 1450px;
+  margin-bottom: 36px;
+  margin-left: 35px;
+  margin-top: 35px;
+  background: lightgray;
+}
+
+.introParagraph {
+  margin-left: 30px
+}
+

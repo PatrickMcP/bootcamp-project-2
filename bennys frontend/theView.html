@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The View</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./intro.css">
-    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <title>Home Page</title>
 </head>
-<body>
+
+<body class = "backBody">
 <nav>
-  <div class="nav-wrapper">
+  <div class="topNav">
     <a href="#" class="brand-logo"><img id = "golfBall" src = "https://www.yourwdwstore.net/assets/images/4/40000/4000/000/44077b.jpg" class = "circle" alt="Image"width="auto"height="64"></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="./intro.html">Home</a></li>
@@ -22,89 +21,89 @@
   </div>
 </nav>
 <a class="weatherwidget-io" href="https://forecast7.com/en/40d56n111d84/sandy/?unit=us" data-label_1="Current" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="dark" >Current WEATHER</a>
-<h2>The View</h2>
-<hr>
-<h3>Fly Over</h3>
+<h2 class = "textCenter">The View</h2>
+<hr class="lineRed">
+<h3 class = "titleH3">Fly Over</h3>
 <img id = "overHead" src="http://golf.lacity.org/golf/emailer2020/img/lacity/woodley_combo.jpg" alt="over head view of course">
-<h3>Scorecard</h3>
+<h3 class = "titleH3">Scorecard</h3>
 <div id = "scoreCard">
-<table>
+<table id = "scoreTable">
     <thead>
       <tr>
-          <th>Hole</th>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-          <th>7</th>
-          <th>8</th>
-          <th>9</th>
-          <th>Out</th>
-          <th>10</th>
-          <th>10</th>
-          <th>11</th>
-          <th>12</th>
-          <th>13</th>
-          <th>14</th>
-          <th>15</th>
-          <th>16</th>
-          <th>17</th>
-          <th>18</th>
-          <th>Out</th>
+          <th class = "tableTop">Hole</th>
+          <th class = "tableTop">1</th>
+          <th class = "tableTop">2</th>
+          <th class = "tableTop">3</th>
+          <th class = "tableTop">4</th>
+          <th class = "tableTop">5</th>
+          <th class = "tableTop">6</th>
+          <th class = "tableTop">7</th>
+          <th class = "tableTop">8</th>
+          <th class = "tableTop">9</th>
+          <th class = "tableTop">Out</th>
+          <th class = "tableTop">10</th>
+          <th class = "tableTop">10</th>
+          <th class = "tableTop">11</th>
+          <th class = "tableTop">12</th>
+          <th class = "tableTop">13</th>
+          <th class = "tableTop">14</th>
+          <th class = "tableTop">15</th>
+          <th class = "tableTop">16</th>
+          <th class = "tableTop">17</th>
+          <th class = "tableTop">18</th>
+          <th class = "tableTop">Out</th>
 
       </tr>
     </thead>
 
     <tbody>
       <tr>
-        <td class = "red">Red</td>
-        <td class = "red">450</td>
-        <td class = "red">350</td>
-        <td class = "red">128</td>
-        <td class = "red">438</td>
-        <td class = "red">401</td>
-        <td class = "red">376</td>
-        <td class = "red">479</td>
-        <td class = "red">189</td>
-        <td class = "red">350</td>
-        <td class = "red">2800</td>
-        <td class = "red">401</td>
-        <td class = "red">425</td>
-        <td class = "red">450</td>
-        <td class = "red">480</td>
-        <td class = "red">502</td>
-        <td class = "red">185</td>
-        <td class = "red">245</td>
-        <td class = "red">325</td>
-        <td class = "red">456</td>
-        <td class = "red">550</td>
-        <td class = "red">3100</td>
+        <td class = "tableRed">Red</td>
+        <td class = "tableRed">450</td>
+        <td class = "tableRed">350</td>
+        <td class = "tableRed">128</td>
+        <td class = "tableRed">438</td>
+        <td class = "tableRed">401</td>
+        <td class = "tableRed">376</td>
+        <td class = "tableRed">479</td>
+        <td class = "tableRed">189</td>
+        <td class = "tableRed">350</td>
+        <td class = "tableRed">2800</td>
+        <td class = "tableRed">401</td>
+        <td class = "tableRed">425</td>
+        <td class = "tableRed">450</td>
+        <td class = "tableRed">480</td>
+        <td class = "tableRed">502</td>
+        <td class = "tableRed">185</td>
+        <td class = "tableRed">245</td>
+        <td class = "tableRed">325</td>
+        <td class = "tableRed">456</td>
+        <td class = "tableRed">550</td>
+        <td class = "tableRed">3100</td>
       </tr>
       <tr>
-        <td class = "white">White</td>
-        <td class = "white">480</td>
-        <td class = "white">125</td>
-        <td class = "white">352</td>
-        <td class = "white">480</td>
-        <td class = "white">420</td>
-        <td class = "white">510</td>
-        <td class = "white">176</td>
-        <td class = "white">230</td>
-        <td class = "white">320</td>
-        <td class = "white">2400</td>
-        <td class = "white">180</td>
-        <td class = "white">220</td>
-        <td class = "white">202</td>
-        <td class = "white">320</td>
-        <td class = "white">420</td>
-        <td class = "white">480</td>
-        <td class = "white">186</td>
-        <td class = "white">145</td>
-        <td class = "white">356</td>
-        <td class = "white">489</td>
-        <td class = "white">2500</td>
+        <td class = "tableWhite">White</td>
+        <td class = "tableWhite">480</td>
+        <td class = "tableWhite">125</td>
+        <td class = "tableWhite">352</td>
+        <td class = "tableWhite">480</td>
+        <td class = "tableWhite">420</td>
+        <td class = "tableWhite">510</td>
+        <td class = "tableWhite">176</td>
+        <td class = "tableWhite">230</td>
+        <td class = "tableWhite">320</td>
+        <td class = "tableWhite">2400</td>
+        <td class = "tableWhite">180</td>
+        <td class = "tableWhite">220</td>
+        <td class = "tableWhite">202</td>
+        <td class = "tableWhite">320</td>
+        <td class = "tableWhite">420</td>
+        <td class = "tableWhite">480</td>
+        <td class = "tableWhite">186</td>
+        <td class = "tableWhite">145</td>
+        <td class = "tableWhite">356</td>
+        <td class = "tableWhite">489</td>
+        <td class = "tableWhite">2500</td>
 
       </tr>
       <tr>
@@ -135,14 +134,13 @@
   </table>
 </div>
 
-<h3>Preview</h3>
+<h3 class = "titleH3">Preview</h3>
 <div id = "buttonContainer">
       <a class="waves-effect waves-light btn pink darken-1 modal-trigger" href="#demo-modal">View All Holes</a>
       <a class="waves-effect waves-light btn pink darken-1" href="../../scorecard.html">Play Course</a> 
 </div>
   <div id="demo-modal" class="modal">
     <div class="modal-content">
-      <h4>A Demo of Simple Modal</h4>
       <div class="row">
             <div class="col s4 12">
                   <a href="#" ><img class = "otherModal" src = "https://www.nailcotehall.co.uk/images/main-content/_w320/BP3-Vector-Hole-1.jpg"></a>
@@ -235,7 +233,6 @@
             <div class="footer-copyright">
               <div class="container">
               © 2018 Copyright Mean Dean Productions
-              <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
               </div>
             </div>
           </footer>
