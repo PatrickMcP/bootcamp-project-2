@@ -1,0 +1,45 @@
+.pmd-content {margin-top: 30px; padding-left:0; padding-right:0;}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.pmd-navbar.navbar-inverse { background:#4285f4; border-color:rgba(0,0,0,0.10);}
+.pmd-navbar .navbar-brand {color:rgba(255,255,255,0.87);}
+.pmd-navbar .navbar-brand:hover {color:#fff;}
+.pmd-navbar .navbar-toggle .icon-bar {background:#fff;}
+.pmd-navbar .navbar-nav > li > a { color:rgba(255,255,255,0.87);}
+.pmd-navbar .navbar-nav.nav > li > a:focus,
+.pmd-navbar .navbar-nav.nav > li > a:hover {background-color:rgba(0,0,0,0.10);}
+.pmd-navbar.navbar-inverse .navbar-nav>.active>a, .pmd-navbar.navbar-inverse .navbar-nav>.active>a:focus, .pmd-navbar.navbar-inverse .navbar-nav>.active>a:hover { background-color:rgba(0,0,0,0.10);}
+.pmd-navbar.navbar-inverse .navbar-nav>.open>a, .pmd-navbar.navbar-inverse .navbar-nav>.open>a:focus, .pmd-navbar.navbar-inverse .navbar-nav>.open>a:hover{
+	background-color:rgba(0,0,0,0.10);
+}
+@media (max-width: 767px) {
+	.pmd-navbar.navbar-inverse .pmd-navbar-sidebar {
+		background-color: #4285f4;
+	}
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    	color: #ffffff;
+	}
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {background-color: transparent;}
+
+/* CUSTOMIZE THE BANNER
+-------------------------------------------------- */
+.banner {margin:0 0 30px; background:url(../images/banner.jpg) center no-repeat; background-size:cover; position:relative;}
+.banner.pmd-card { padding:170px 0 1px;}
+.banner .pmd-card-body { position:relative;}
+.banner:before { content:""; position:absolute; left:0; width:100%; bottom:0; height:50%; z-index:0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to top,  rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+.banner .pmd-display1 { opacity:1; color:#fff;}  
+.banner p { color:#fff;}
+
+/* CUSTOMIZE THE SIDEBAR
+-------------------------------------------------- */
+.sidebar .pmd-card-list{padding-top:0; padding-bottom:0;}
+.sidebar .list-group-item.active {background-color:#4285f4;}

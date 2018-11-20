@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
@@ -8,23 +9,25 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 //Passport
-var passport = require('passport');
-var flash = require('connect-flash');
-var cookieParser = require('cookie-parser');
-var session = require('express-session'); // cookie session
+var passport = require("passport");
+var flash = require("connect-flash");
+var cookieParser = require("cookie-parser");
+var session = require("express-session"); // cookie session
 var bodyParser = require("body-parser");
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(session({
-  key: 'user_sid',
-  secret: 'goN6DJJC6E287cC77kkdYuNuAyWnz7Q3iZj8',
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
+app.use(
+  session({
+    key: "user_sid",
+    secret: "goN6DJJC6E287cC77kkdYuNuAyWnz7Q3iZj8",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
       expires: 600000
-  }
-}));
-
+    }
+  })
+);
+require("./config/passport")(passport);
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 app.use(flash());
@@ -57,8 +60,8 @@ if (process.env.NODE_ENV === "test") {
 }
 
 // Starting the server, syncing our models ------------------------------------/
-db.sequelize.sync(syncOptions).then(function () {
-  app.listen(PORT, function () {
+db.sequelize.sync(syncOptions).then(function() {
+  app.listen(PORT, function() {
     console.log(
       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
       PORT,
