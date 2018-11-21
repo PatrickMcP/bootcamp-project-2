@@ -22,6 +22,30 @@ module.exports = function(app) {
     }
   });
 
+  app.get("/signup", function(req, res) {
+    if (req.isAuthenticated()) {
+      res.redirect("/landing");
+    } else {
+      res.render("accounts");
+    }
+  });
+
+  app.get("/landing", function(req, res) {
+    if (req.isAuthenticated()) {
+      res.redirect("/signup");
+    } else {
+      res.render("landing");
+    }
+  });
+
+  app.get("/theview", function(req, res) {
+    if (req.isAuthenticated()) {
+      res.redirect("/signup");
+    } else {
+      res.render("theview");
+    }
+  });
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(
