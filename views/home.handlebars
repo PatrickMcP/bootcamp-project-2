@@ -6,14 +6,26 @@
         <hr class="my-4">
         <p class="lead">Create account</p>
         <div>
+
             <button type="submit" id="sign-in-modal" class="btn">Sign In!</button>
             <button type="submit" id="sign-up" class="btn">Sign Up!</button>
+
+            {{#if isloggedin}}
+            <button type="submit" id="search-item" class="btn">Search For Item</button>
+            <button type="submit" id="post-item" class="btn">Post an Item</button>
+            <a href="/logout"> <button type="btn" class="btn">Logout</button></a>
+            {{else}}
+            <button type="submit" id="sign-in-modal" class="btn">Sign In!</button>
+            <button type="submit" id="sign-up" class="btn">Sign Up!</button>
+            {{/if}}
+
+
         </div>
     </div>
 
 </div>
 
-{{> Modal/signin-block}}
+{{> Modal/signin-block
 
 <script>
     $.fn.extend({
@@ -40,11 +52,16 @@
     });
 </script>
 
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
 <script src="./js/home.js"></script>
 <script src="./js/accounts.js"></script>

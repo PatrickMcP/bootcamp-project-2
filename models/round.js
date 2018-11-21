@@ -16,6 +16,7 @@ module.exports = function(sequelize, DataTypes) {
     hole14Score: DataTypes.INTEGER,
     hole15Score: DataTypes.INTEGER,
     hole16Score: DataTypes.INTEGER,
+    hole17Score: DataTypes.INTEGER,
     hole18Score: DataTypes.INTEGER
   });
   return Round;
