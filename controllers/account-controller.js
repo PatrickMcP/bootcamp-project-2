@@ -8,31 +8,6 @@ module.exports = function(app) {
     res.render("accounts");
   });
 
-  app.get("/accounts/view", function(req, res) {
-    console.log("%%%%%%%%% is logged in", req.isAuthenticated());
-
-    if (req.isAuthenticated()) {
-      db.Accounts.findOne({
-        where: {
-          uuid: req.session.passport.user
-        }
-      }).then(function(dbUser) {
-        var user = {
-          userInfo: dbUser.dataValues,
-          id: req.session.passport.user,
-          isloggedin: req.isAuthenticated()
-        };
-        res.render("view-account", user);
-      });
-    } else {
-      var user = {
-        id: null,
-        isloggedin: req.isAuthenticated()
-      };
-      res.redirect("/");
-    }
-  });
-
   app.get("/logout", function(req, res) {
     req.session.destroy(function(_err) {
       req.logout();
@@ -61,7 +36,7 @@ module.exports = function(app) {
         console.log("redirecting....");
         res.cookie("first_name", user.first_name);
         res.cookie("user_id", user.uuid);
-        return res.redirect("/accounts/view");
+        return res.redirect("/landing");
       });
     })(req, res, next);
   });

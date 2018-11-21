@@ -37,7 +37,7 @@ $("#add-account").on("click", function(event) {
       url: "/signup",
       data: newAccount
     }).then(function(data) {
-      window.location.href = "/";
+      res.redirect("/thelanding");
     });
   } else {
     console.log("**Please fill out entire form**");
@@ -89,7 +89,7 @@ $("#update-account").on("click", function(event) {
     }).then(function() {
       console.log("Updated account", changeAccount);
       // Reload the page to get the updated list
-      location.reload();
+      res.redirect("/thelanding");
     });
   } else {
     console.log("**Please fill out entire form**");

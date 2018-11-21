@@ -11,7 +11,6 @@ $("#sign-up").on("click", function(event) {
 
 $("#sign-in-modal").on("click", function(event) {
   event.preventDefault();
-
   $("#account-info").modal("show");
 });
 
@@ -38,7 +37,7 @@ $("#sign-in").on("click", function(event) {
 
   $.post("/login", user, function(results) {
     if (results) {
-      $(location).attr("href", "/accounts/view");
+      $(location).attr("href", "/landing");
     } else {
       $("#account-info").modal("close");
       alert("oops something went wrong, please try again!");

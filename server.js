@@ -11,6 +11,10 @@ var PORT = process.env.PORT || 3000;
 //Passport
 var passport = require("passport");
 var flash = require("connect-flash");
+
+// eslint-disable-next-line no-unused-vars
+=======
+
 var cookieParser = require("cookie-parser");
 var session = require("express-session"); // cookie session
 var bodyParser = require("body-parser");
@@ -27,6 +31,8 @@ app.use(
     }
   })
 );
+
+=======
 require("./config/passport")(passport);
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
