@@ -8,17 +8,9 @@ module.exports = function(app) {
         id: req.session.passport.user,
         isloggedin: req.isAuthenticated()
       };
-      res.render("home", user);
+      res.render("newview", user);
     } else {
-      res.render("home");
-    }
-  });
-
-  app.get("/signup", function(req, res) {
-    if (req.isAuthenticated()) {
-      res.redirect("/acounts/view");
-    } else {
-      res.render("accounts");
+      res.render("newview");
     }
   });
 
@@ -38,6 +30,10 @@ module.exports = function(app) {
     }
   });
 
+  app.get("/newview", function(req, res) {
+    res.render("newview");
+  });
+
   app.get("/theview", function(req, res) {
     if (req.isAuthenticated()) {
       res.redirect("/signup");
@@ -46,18 +42,12 @@ module.exports = function(app) {
     }
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(
-      dbExample
-    ) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
-  });
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
+  });
+
+  app.get("/newview", function(req, res) {
+    res.render("newview");
   });
 };
