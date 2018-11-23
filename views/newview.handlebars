@@ -1,0 +1,91 @@
+    <header>
+        <nav class="cyan">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo">LOGO</a>
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Scores</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-menu">
+                        <li>
+                            <div class="userView">
+                                <div class="background">
+                                    <img src="/public/images/navebar2.jpg" alt="Background Sidenav">
+                                </div>
+                                <a href="#!name"><span class="green-text text-darken-4 name">User Name</span></a>
+                                <a href="#!email"><span class="white-text email">User Name Goes Here</span></a>
+                            </div>
+                        </li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">scores</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <!-- Your content here -->
+                    <div class="card large">
+                        <div class="card-image">
+                            <img src="/public/images/images.jpg" alt=""/>
+                            <span class="card-title"></span>
+                        </div>
+                        <div class="card-content">
+                            
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col s12">
+                        <table class="responsive-table">
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Hole 1</th>
+                                    <th data-field="name">Hole 2</th>
+                                    <th data-field="price">Hole 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="parRow">
+                                    <td>par</td>
+                                    <td>par</td>
+                                    <td>par</td>
+                                </tr>
+                                <tr>
+                                    <td>Form Here</td>
+                                    <td>Form Here</td>
+                                    <td>Form Here</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer cyan">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            $(".button-collapse").sideNav();
+        });
+    </script>
