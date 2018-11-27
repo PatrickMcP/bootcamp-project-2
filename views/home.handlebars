@@ -1,65 +1,78 @@
-<div id="main-container" class="container">
-    <div class="jumbotron text-center header-wrap" align="center">
-        {{!-- <h1 class="display-4">Rent-All</h1> --}}
-        <img src="../assets/Images/linkedin_banner_image_1.png" alt="logo" class="mb-4" style="width:210px;">
-        <p class="lead">Welcome to <strong>Project 2</strong></p>
-        <hr class="my-4">
-        <p class="lead">Create account</p>
-        <div>
+<div class="container">
+    <div class="row">
+        <!-- Your content here -->
+        <div class="col s12 l6 offset-l3">
+            <div class="card blue-grey darken-1 z-depth-4 ">
+                <div class="card-content white-text">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputAccount">Email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAccount">Password (min 8 characters)</label>
+                            <input type="password" class="form-control" id="account_password">
+                        </div>
+                    </form>
+                    <div class="center-align">
+                        <button type="submit" id="sign-in" class="btn">Sign In!</button>
+                    </div>
+                    <div class="center-align">
+                        <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Modal</button>
 
-            <button type="submit" id="sign-in-modal" class="btn">Sign In!</button>
-            <button type="submit" id="sign-up" class="btn">Sign Up!</button>
+                        <!-- Modal Structure -->
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <div class="container">
 
-            {{#if isloggedin}}
-            <button type="submit" id="search-item" class="btn">Search For Item</button>
-            <button type="submit" id="post-item" class="btn">Post an Item</button>
-            <a href="/logout"> <button type="btn" class="btn">Logout</button></a>
-            {{else}}
-            <button type="submit" id="sign-in-modal" class="btn">Sign In!</button>
-            <button type="submit" id="sign-up" class="btn">Sign Up!</button>
-            {{/if}}
+                                    <div class="row">
+                                        <form class="col s12">
+                                            <div class="row">
+                                                <div class="input-field col s6">
+                                                    <input id="inputFirst" type="text" class="validate black-text">
+                                                    <label for="inputFirst">First Name</label>
+                                                </div>
+                                                <div class="input-field col s6">
+                                                    <input id="inputLast" type="text" class="validate black-text">
+                                                    <label for="inputLast">Last Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="inputPassword" type="password" class="validate black-text">
+                                                    <label for="inputPassword">Password</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="inputEmail" type="email" class="validate black-text">
+                                                    <label for="inputEmail">Email</label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
 
 
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" id="add-account" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
-
-{{> Modal/signin-block }}
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
-    $.fn.extend({
-        animateCss: function (animationName, callback) {
-            var animationEnd = (function (el) {
-                var animations = {
-                    animation: 'animationend',
-                    OAnimation: 'oAnimationEnd',
-                    MozAnimation: 'mozAnimationEnd',
-                    WebkitAnimation: 'webkitAnimationEnd',
-                };
-                for (var t in animations) {
-                    if (el.style[t] !== undefined) {
-                        return animations[t];
-                    }
-                }
-            })(document.createElement('div'));
-            this.addClass('animated ' + animationName).one(animationEnd, function () {
-                $(this).removeClass('animated ' + animationName);
-                if (typeof callback === 'function') callback();
-            });
-            return this;
-        },
+    $(document).ready(function () {
+        $('.modal').modal();
     });
 </script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
 

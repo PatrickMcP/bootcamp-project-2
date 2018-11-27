@@ -1,26 +1,6 @@
 console.log("Home.js loaded");
 
 // on click of each button with AJAX call based on predefined routes - look into Google doc for routes
-$("#sign-up").on("click", function(event) {
-  event.preventDefault();
-
-  $("#sign-up").animateCss("pulse", function() {
-    window.location.href = "/signup";
-  });
-});
-
-$("#sign-in-modal").on("click", function(event) {
-  event.preventDefault();
-  $("#account-info").modal("show");
-});
-
-$("#go-home").on("click", function(event) {
-  event.preventDefault();
-  console.log("hello");
-  $("#go-home").animateCss("pulse", function() {
-    window.location.href = "/";
-  });
-});
 
 $("#sign-in").on("click", function(event) {
   event.preventDefault();

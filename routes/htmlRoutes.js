@@ -8,9 +8,9 @@ module.exports = function(app) {
         id: req.session.passport.user,
         isloggedin: req.isAuthenticated()
       };
-      res.render("newview", user);
+      res.render("home", user);
     } else {
-      res.render("newview");
+      res.render("home");
     }
   });
 
@@ -24,7 +24,7 @@ module.exports = function(app) {
 
   app.get("/landing", function(req, res) {
     if (req.isAuthenticated()) {
-      res.redirect("/signup");
+      res.render("landing");
     } else {
       res.render("landing");
     }
@@ -45,9 +45,5 @@ module.exports = function(app) {
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
-  });
-
-  app.get("/newview", function(req, res) {
-    res.render("newview");
   });
 };
