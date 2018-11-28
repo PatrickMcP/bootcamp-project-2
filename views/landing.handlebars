@@ -1,156 +1,76 @@
 
-<nav>
+<body class="blue lighten-3">
+  <nav class = "grey darken-4">
     <div class="topNav">
-        <a href="#" class="brand-logo"><img id="golfBall" class="circle" src="https://www.yourwdwstore.net/assets/images/4/40000/4000/000/44077b.jpg"></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="./">Home</a></li>
-            <li><a href="./courses.html">Courses</a></li>
-            <li><a href="#">And Stuff</a></li>
-
-        </ul>
+      <a href="#" class="brand-logo"><img id="golfBall" class="circle" src="https://www.yourwdwstore.net/assets/images/4/40000/4000/000/44077b.jpg" width="60px" height="60px"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="./intro.html">Home</a></li>
+        <li><a href="./scorecard.html">Scorecard</a></li>
+      </ul>
     </div>
-</nav>
-<h2 id="selectCourse">Select A Course</h2>
-<div id="container">
-    <h2 class="textCenter">The View</h2>
-    <hr class="lineRed">
-    <a href="theview" class="brand-logo"> <img class="static" src="https://www.golfcoronado.com/images/slideshows/banner_1.jpg"><img
-            class="active" src="https://media.giphy.com/media/klAV5rDupbP9sEzFLr/giphy.gif"></a>
-    <h2 class="textCenter">Mountain's Edge</h2>
-    <hr class="lineRed">
-    <img class="theView" src="https://desertmountain.com/wp-content/uploads/2011/12/apache-course.jpg" alt="golf course picture">
-    <h2 class="textCenter">Peak Destiny</h2>
-    <hr class="lineRed">
-    <img class="theView" src="https://i.dailymail.co.uk/i/pix/2014/11/05/1415183456261_wps_24_PIC_BY_EVAN_SCHILLER_CATE.jpg"
-        alt="golf course picture">
+  </nav>
+
+  <!--The View Title-->
+<div class="row">
+    <div class="col s6 offset-s3">
+      <div class="card grey darken-4">
+        <div class="card-content white-text">
+          <h2 class = "center-align">Select A Course</h2>
+        </div>
+    </div>
+
+</div>
 </div>
 
-<script>
-    $(document).ready(function() {
-        $('img.thumbnail').click(function() {
-            window.location.href = "/theview";
-        });
-    });
-</script>
+<!--Courses-->
+<div class="row">
+  <div class="col s10 offset-s1">
+  <div class="card grey darken-4">
+    <div class="card-content white-text">
+      <h2 class="center-align">The View</h2>
+    </div>
+    <hr>
+    <div class="row">
+        <a href="./theView.html"><div class="col s10 offset-s1"><img src="https://www.golfcoronado.com/images/slideshows/banner_1.jpg"width="100%" height="250px"></div></a>
+    </div>
+  </div>
+  </div>
+</div>
 
-<footer class="page-footer">
+<div class="row">
+    <div class="col s10 offset-s1">
+    <div class="card grey darken-4">
+      <div class="card-content white-text">
+          <h2 class="center-align">Mountain's Edge</h2>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col s10 offset-s1"><img src="https://desertmountain.com/wp-content/uploads/2011/12/apache-course.jpg"width="100%" height="250px"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col s10 offset-s1">
+    <div class="card grey darken-4">
+      <div class="card-content white-text">
+          <h2 class="center-align">Peak Destiny</h2>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col s12 offset-s1"><img src="https://i.dailymail.co.uk/i/pix/2014/11/05/1415183456261_wps_24_PIC_BY_EVAN_SCHILLER_CATE.jpg"width="80%" height="250px"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+
+  <footer class="page-footer grey darken-4">
     <div class="footer-copyright">
-        <div class="container">
-            © 2018 Copyright Mean Dean Productions
-        </div>
+      <div class="container">
+        © 2018 Copyright Mean Dean Productions
+      </div>
     </div>
-</footer>
-
-<!--navbar -->
-<nav class="navbar pmd-navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button class="pmd-ripple-effect navbar-toggle pmd-navbar-toggle" type="button">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-        </div>
-        <!--navbar -->
-
-        <div class="pmd-navbar-right-icon pull-right">
-            <a class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect" href="javascript:void(0);"><i class="material-icons md-light pmd-sm">search</i></a>
-        </div>
-
-        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse pmd-navbar-sidebar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a class="pmd-ripple-effect" href="javascript:void(0);">Home</a></li>
-                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Features</a></li>
-                <li><a class="pmd-ripple-effect" href="javascript:void(0);">How it works</a></li>
-                <li><a class="pmd-ripple-effect" href="javascript:void(0);">Support</a></li>
-                <li class="dropdown pmd-dropdown">
-                    <a aria-expanded="false" role="button" data-toggle="dropdown" data-sidebar="true" class="pmd-ripple-effect dropdown-toggle"
-                        href="javascript:void(0);">Services <span class="caret"></span></a>
-                    <ul role="menu" class="dropdown-menu">
-                        <li><a class="pmd-ripple-effect" href="javascript:void(0);">Action</a></li>
-                        <li><a class="pmd-ripple-effect" href="javascript:void(0);">Another action</a></li>
-                        <li><a class="pmd-ripple-effect" href="javascript:void(0);">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a class="pmd-ripple-effect" href="javascript:void(0);">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!--navbar -->
-    </div>
-    <div class="pmd-sidebar-overlay"></div>
-</nav>
-<!--navbar -->
-
-<div class="pmd-content">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-xs-12 col-sm-9">
-                <div class="pmd-card pmd-card-default pmd-z-depth banner">
-                    <div class="pmd-card-body">
-                        <h1 class="pmd-display1">Hello, world!</h1>
-                        <p class="lead">This is an example to show the potential of an offcanvas layout pattern in
-                            Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <!--pmd-card -->
-                        <div class="pmd-card pmd-card-default pmd-z-depth">
-                            <!-- Card body -->
-                            <div class="pmd-card-title">
-                                <h2 class="pmd-card-title-text">Planning</h2>
-                            </div>
-                            <div class="pmd-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus et erat ut nulla imperdiet convallis. Aenean ornare imperdiet quam vitae
-                                posuere. In molestie convallis ante a ornare. Donec lacus orci, rutrum eu volutpat ut,
-                                euismod in turpis.</div>
-                            <!-- Card actions -->
-                            <div class="pmd-card-actions">
-                                <button class="btn pmd-btn-raised pmd-ripple-effect btn-primary" type="button">View
-                                    details</button>
-                            </div>
-                        </div>
-                        <!--pmd-card -->
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-3 sidebar" id="sidebar">
-                <!--Three line list with avatar -->
-                <div class="list-group pmd-z-depth pmd-list pmd-card-list">
-                    <a class="list-group-item active" href="javascript:void(0);">Graphic Design</a>
-                    <a class="list-group-item" href="javascript:void(0);">Web Design</a>
-                    <a class="list-group-item" href="javascript:void(0);">Product Design</a>
-                    <a class="list-group-item" href="javascript:void(0);">UI / UX Design</a>
-                    <a class="list-group-item" href="javascript:void(0);">Product Development</a>
-                </div>
-            </div>
-            <!--/.sidebar-offcanvas-->
-
-        </div>
-        <!--/row-->
-        <hr>
-        <footer>
-            <p class="text-center">&copy; <span class="auto-update-year">2016</span> <a href="http://propeller.in/">Propeller.in</a></p>
-        </footer>
-    </div>
-    <!--/.container-->
-</div>
-
-<!-- Bootstrap core JavaScript
-    ================================================== -->
-<!-- Jquery js -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<!-- Bootstrap js -->
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- PMD -->
-<script type="text/javascript" src="https://propeller.in/assets/js/propeller.js"></script>
-
-<script>$(".auto-update-year").html(new Date().getFullYear());</script>
+  </footer>
