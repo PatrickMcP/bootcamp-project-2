@@ -19,7 +19,7 @@ $("#sign-in").on("click", function(event) {
     if (results) {
       $(location).attr("href", "/landing");
     } else {
-      $("#account-info").modal("close");
+      $(location).attr("href", "/");
       alert("oops something went wrong, please try again!");
     }
   });
