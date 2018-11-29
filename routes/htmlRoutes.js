@@ -30,8 +30,8 @@ module.exports = function(app) {
     }
   });
 
-  app.get("/newview", function(req, res) {
-    res.render("newview");
+  app.get("/scorecard", function(req, res) {
+    res.render("scorecard");
   });
 
   app.get("/theview", function(req, res) {
