@@ -37,7 +37,7 @@ $("#add-account").on("click", function(event) {
       url: "/signup",
       data: newAccount
     }).then(function(data) {
-      res.redirect("/thelanding");
+      $(location).attr("href", "/landing");
     });
   } else {
     console.log("**Please fill out entire form**");

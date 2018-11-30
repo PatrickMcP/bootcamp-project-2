@@ -1,80 +1,85 @@
-<div class="container">
-    <div class="row">
-        <!-- Your content here -->
-        <div class="col s12 l6 offset-l3">
-            <div class="card blue-grey darken-1 z-depth-4 ">
-                <div class="card-content white-text">
-                    <form>
-                        <div class="form-group">
-                            <label for="inputAccount">Email</label>
-                            <input type="text" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAccount">Password (min 8 characters)</label>
-                            <input type="password" class="form-control" id="account_password">
-                        </div>
-                    </form>
-                    <div class="center-align">
-                        <button type="submit" id="sign-in" class="btn">Sign In!</button>
-                    </div>
-                    <div class="center-align">
-                        <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Modal</button>
+<main class="blue lighten-3">
+    <div class="container">
+        <div class="row">
+            <!-- Your content here -->
+            <div class="col s12 l6 offset-l3">
+                <div class="card grey darken-2 z-depth-4 ">
+                    <div class="card-content white-text">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputAccount">Email</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAccount">Password (min 8 characters)</label>
+                                <input type="password" class="form-control" id="account_password">
+                            </div>
+                        </form>
 
-                        <!-- Modal Structure -->
-                        <div id="modal1" class="modal">
-                            <div class="modal-content">
-                                <div class="container">
+                        <div class="center-align">
+                            <button type="submit" id="sign-in" class="btn blue lighten-1">Sign In!</button>
+                        </div>
+                        <div class="center-align">
+                            <button class="waves-effect waves-light blue lighten-1 btn modal-trigger" data-target="modal1">Sign-Up</button>
 
-                                    <div class="row">
-                                        <form class="col s12">
-                                            <div class="row">
-                                                <div class="input-field col s6">
-                                                    <input id="inputFirst" type="text" class="validate black-text">
-                                                    <label for="inputFirst">First Name</label>
+                            <!-- Modal Structure -->
+                            <div id="modal1" class="modal grey darken-2">
+                                <div class="modal-content ">
+                                    <div class="container grey darken-2">
+
+                                        <div class="row">
+                                            <form class="col s12">
+                                                <div class="row">
+                                                    <div class="input-field col s6">
+                                                        <input id="inputFirst" type="text" class="validate white-text">
+                                                        <label for="inputFirst">First Name</label>
+                                                    </div>
+                                                    <div class="input-field col s6">
+                                                        <input id="inputLast" type="text" class="validate white-text">
+                                                        <label for="inputLast">Last Name</label>
+                                                    </div>
                                                 </div>
-                                                <div class="input-field col s6">
-                                                    <input id="inputLast" type="text" class="validate black-text">
-                                                    <label for="inputLast">Last Name</label>
+                                                <div class="row">
+                                                    <div class="input-field col s12">
+                                                        <input id="inputPassword" type="password" class="validate white-text">
+                                                        <label for="inputPassword">Password</label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <input id="inputPassword" type="password" class="validate black-text">
-                                                    <label for="inputPassword">Password</label>
+                                                <div class="row">
+                                                    <div class="input-field col s12">
+                                                        <input id="inputEmail" type="email" class="validate white-text">
+                                                        <label for="inputEmail">Email</label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <input id="inputEmail" type="email" class="validate black-text">
-                                                    <label for="inputEmail">Email</label>
-                                                </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
+
                                     </div>
 
+
                                 </div>
-
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" id="add-account" class="btn btn-primary">Submit</button>
+                                <div class="modal-footer grey darken-2">
+                                    <button type="submit" id="add-account" class="btn blue lighten-1">Submit</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.modal').modal();
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
 
-<script src="./js/home.js"></script>
-<script src="./js/accounts.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/accounts.js"></script>
